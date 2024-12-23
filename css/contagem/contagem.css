@@ -1,0 +1,72 @@
+.contagem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 10px;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  margin-top: 0.3rem;
+}
+
+.borda-timer {
+  background-color: #ff2c64;
+  padding: 8px 15px;
+  border-radius: 4px;
+  width: 70px;
+}
+
+.oferta {
+  max-width: 600px;
+  font-weight: 100;
+  line-height: 0.9;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  .oferta {
+    max-width: 340px;
+}
+}
+
+@media (max-width: 800px) {
+  .label {
+    margin-top: 0.2rem;
+  }
+  #timer {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #timer {
+    gap: 0.4rem;
+  }
+  .borda-timer {
+    padding: 0.5rem 15px;
+    width: 50px;
+  }
+}
