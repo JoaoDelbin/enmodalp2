@@ -3,3 +3,6 @@
 @import "./utilidades/global.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/utilidades.css";
+@import "./main/main.css";
+@import "./comprador/comprador.css";

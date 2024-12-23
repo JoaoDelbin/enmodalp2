@@ -5,6 +5,10 @@
   font-weight: 600;
 }
 
+.light {
+  font-weight: 400;
+}
+
 .font-1-xxl-sb {
   font: 800 4rem/1.125 "Poppins", sans-serif;
 }
