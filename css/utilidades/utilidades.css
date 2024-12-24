@@ -22,6 +22,7 @@
 .container-botao {
   align-items: center;
   justify-self: center;
+  justify-content: center;
 }
 
 .botao {
@@ -42,11 +43,41 @@
   background-color: #ee1d55;
 }
 
+
+ .botao-dec {
+  position: relative; 
+  z-index: 1; 
+}
+
+.botao-dec::before {
+  z-index: 70;
+  position: absolute;
+  content: "";
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/12/56/cursor-146588_960_720.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10% 85%;
+} 
+
+
+
+
+
 @media (max-width: 500px) {
   .botao {
     font-size: 1.5rem;
     padding: 5px 10px;
   }
-
+  .container-botao .botao {
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+  }
+  .botao-dec::before {
+    width: 50px;
+    height: 50px;
   
 }

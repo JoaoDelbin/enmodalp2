@@ -1,0 +1,76 @@
+.oqvaiaprender-bg {
+  background-color: #000;
+}
+
+.oqvaiaprender-bg h2 {
+  font-weight: 400;
+  
+  justify-self: center;
+}
+
+.texto-oqvai {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.grid-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.lista-item {
+  max-width: 500px;
+  padding: 15px 10px;
+}
+
+.lista-item {
+  max-width: 500px;
+  padding: 15px 10px;
+}
+
+.dec-1 {
+  position: relative;
+  padding-left: 30px; 
+
+}
+
+
+.dec-1::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/imagens/dec.svg');
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+
+@media (max-width:500px) {
+  .texto-oqvai {
+    padding: 10px;
+    max-width: 700px;
+    text-align: center;
+    }
+    .dec-1 {
+      padding-left: 30px; 
+    }
+  
+  .dec-1::before {
+    width: 15px;
+    height: 15px;
+  }
+  .grid-lista {
+    padding: 20px;
+    gap: 10px;  
+  }
+}

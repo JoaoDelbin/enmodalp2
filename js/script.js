@@ -39,7 +39,7 @@ const countdownInterval = setInterval(function () {
 }, 1000);
 
 // --------------------------------------------------------------------------
-// -------------------------------contagem-----------------------------------
+// -------------------------------video-----------------------------------
 // --------------------------------------------------------------------------
 
 function playVideo2() {
@@ -48,4 +48,85 @@ function playVideo2() {
   iframe.src = videoUrl;
   iframe.style.display = 'block'; 
   document.querySelector('.video-thumbnail2').style.display = 'none'; 
+}
+
+// --------------------------------------------------------------------------
+// -------------------------------scroll pratico-----------------------------------
+// --------------------------------------------------------------------------
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".pratico-item");
+
+  const handleScroll = () => {
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+  
+      if (rect.top >= windowHeight * 0.3 && rect.bottom <= windowHeight * 0.80) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  };
+
+
+  window.addEventListener("scroll", handleScroll);
+
+
+  handleScroll();
+});
+
+// --------------------------------------------------------------------------
+// ---------------------------videos depoimentos-----------------------------
+// --------------------------------------------------------------------------
+
+
+function playVideo3() {
+  const iframe = document.getElementById('video3');
+  const videoUrl = "https://www.youtube.com/embed/2up7B0SClxI?autoplay=1";
+  iframe.src = videoUrl;
+  iframe.style.display = 'block'; 
+  document.querySelector('.video-thumbnail3').style.display = 'none'; 
+}
+
+function playVideo4() {
+  const iframe = document.getElementById('video4');
+  const videoUrl = "https://www.youtube.com/embed/EO-fKonlCzQ?autoplay=1";
+  iframe.src = videoUrl;
+  iframe.style.display = 'block'; 
+  document.querySelector('.video-thumbnail4').style.display = 'none'; 
+}
+
+function playVideo5() {
+  const iframe = document.getElementById('video5');
+  const videoUrl = "https://www.youtube.com/embed/g_NdJtW4Wpo?autoplay=1";
+  iframe.src = videoUrl;
+  iframe.style.display = 'block'; 
+  document.querySelector('.video-thumbnail5').style.display = 'none'; 
+}
+
+// --------------------------------------------------------------------------
+// ---------------------------btn vermais-----------------------------
+// --------------------------------------------------------------------------
+
+
+
+function vermais() {
+  const pontos = document.getElementById('pontos');
+  const texto = document.getElementById('vermais');
+  const btnvermais = document.getElementById('btn-vermais');
+
+  if(pontos.style.display === 'none'){
+    pontos.style.display = 'inline';
+    texto.style.display = 'none';
+    btnvermais.innerHTML = 'Leia Mais';
+  } 
+  else {
+    pontos.style.display = 'none';
+    texto.style.display = 'inline';
+    btnvermais.innerHTML = 'Leia Menos';
+  }
 }

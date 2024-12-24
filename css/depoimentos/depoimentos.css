@@ -1,0 +1,161 @@
+.depoimentos-bg {
+  padding-top: 40px;
+  background-color: #fff;
+  padding-bottom: 80px;
+}
+
+.titulo-depoimentos {
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.carrossel-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carrossel {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.seta-carrossel {
+  display: none;
+}
+
+
+
+/* videos */
+
+.dados {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.video-thumbnail3,
+.video-thumbnail4,
+.video-thumbnail5 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-size: cover; /* Preenche o espaço para todos */
+  background-position: center; /* Centraliza a imagem */
+  cursor: pointer;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-thumbnail3 {
+  background-image: url("https://img.youtube.com/vi/2up7B0SClxI/hqdefault.jpg");
+}
+
+.video-thumbnail4 {
+  background-image: url("https://img.youtube.com/vi/EO-fKonlCzQ/hqdefault.jpg");
+}
+
+.video-thumbnail5 {
+  background-size: 320%;
+  background-position: center 30%;
+  background-image: url("https://img.youtube.com/vi/g_NdJtW4Wpo/hqdefault.jpg");
+}
+
+.depoimento-video1,
+.depoimento-video2,
+.depoimento-video5 {
+  position: relative;
+  max-width: 640px;
+  min-width: 330px;
+  margin: 0 auto;
+}
+
+.video3,
+.video4,
+.video5 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
+.container-botao {
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.botao-depoimentos {
+  position: absolute;
+}
+
+.botao-depoimentos::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/12/56/cursor-146588_960_720.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10% 85%;
+}
+
+@media (max-width: 1200px){
+.carrossel {
+  overflow: scroll;
+  overflow-y: hidden;
+}}
+
+@media (max-width: 600px) {
+
+  .container-seta {
+    margin-top: -30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .depoimento-video1,
+  .depoimento-video2,
+  .depoimento-video5 {
+    max-width: 640px;
+    min-width: 250px;
+  }
+  .seta-carrossel {
+    display: inline;
+    width: 35px;
+    height: 35px;
+  }
+  .carrossel {
+    gap: 20px;
+  }
+  .depoimentos-bg {
+    padding-bottom: 80px;
+  }
+  .container-botao {
+    padding-top: 60px;
+  }
+  .botao-depoimentos::before {
+    width: 50px;
+    height: 50px;
+    margin: 6% 83%;
+  }
+  .botao-depoimentos {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .botao-depoimentos::before {
+    margin: 6% 88%;
+  }
+}

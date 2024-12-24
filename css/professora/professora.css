@@ -1,0 +1,93 @@
+.professora-bg {
+  background-color: #000;
+  padding-bottom: 40px;
+}
+
+.professora-bg div.container div.professor{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.professor {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+.titulo-professor {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.texto-professor {
+  max-width: 400px;
+}
+
+
+.professor img {
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.professor h3 {
+  padding-bottom: 10px;
+}
+
+
+.pontos2 {
+  display: none;
+}
+.botao-vermais {
+  margin-top: -25px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 7px 15px;
+  background-color: #ff2c64; 
+  text-decoration: none; 
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+  position: relative;
+  white-space: nowrap;
+  display: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.botao-vermais:hover {
+  background-color: #ee1d55;
+}
+
+
+
+@media (max-width: 800px) {
+  
+  .texto-escondido {
+    display: none;
+  }
+  .botao-vermais {
+    display: block;
+  }
+  .pontos2 {
+    display: inline;
+  }
+  .professor h3 {
+    display: none;
+  }
+  
+  .professora-bg div.container div.professor{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .professor img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

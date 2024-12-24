@@ -1,0 +1,70 @@
+.pratico-bg {
+  background-color: #000;
+}
+
+.container-pratico {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 40px;
+}
+
+.container-pratico h2 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.container-pratico article {
+  padding-bottom: 20px;
+}
+
+ul.lista-pratico li {
+  font-weight: 600;
+}
+
+.lista-pratico {
+  padding-top: 20px;
+  align-items: center;
+}
+
+.lista-pratico li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  position: relative; 
+  padding-left: 15px;
+  z-index: 800;
+  max-width: 600px;
+  
+}
+
+.pratico-item::after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 10px; 
+  height: 100%; 
+  border-radius: 0; 
+  background-color: #ff2c64; 
+  transition: width 3s ease, height 5s ease;
+  z-index: -1;
+}
+
+.pratico-item.active::after {
+  color: white;
+  height: 100%;
+  width: 100%;
+  transition: 1.2s ease;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+
+@media (max-width:500px) {
+  .container-pratico article {
+    padding-bottom: 10px;
+  }
+}

@@ -32,4 +32,11 @@
     height: auto; 
     object-fit: contain; */
   }
+  .empresas-bg {
+    padding-bottom: 0px;
+  }
+  
+  .container-empresas {
+    padding-bottom: 0px;
+  }
 }
