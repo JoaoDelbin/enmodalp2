@@ -1,0 +1,35 @@
+.empresas-bg {
+  background-color: #fff; 
+  padding: 30px;
+}
+
+.container-empresas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  justify-items: center; 
+  align-items: center; 
+}
+
+.logos img {
+  width: 150px; 
+  height: auto; 
+  object-fit: contain;
+}
+
+@media (max-width:500px) {
+  .logos {
+    gap: 10px; 
+  }
+  .logos img {
+    width: 80px; 
+    height: auto; 
+    object-fit: contain; */
+  }
+}
