@@ -1,0 +1,60 @@
+.videopro-bg {
+  background-color: #000;
+  box-shadow: inset 0 170px 0 #fff;
+}
+
+.professora-video,
+.professora-video2 {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.video-thumbnail,
+.video-thumbnail2 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-image: url("https://img.youtube.com/vi/y15JDMAGYqo/hqdefault.jpg"); /* Miniatura do novo vídeo */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.overlay,
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.play-icon,
+.play-icon2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.video,
+.video2 {
+  display: none;
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.botao-professora {
+  
+  padding-top: 40px;
+}

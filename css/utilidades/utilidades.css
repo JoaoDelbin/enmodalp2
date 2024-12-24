@@ -19,6 +19,11 @@
   margin-bottom: 20px;
 }
 
+.container-botao {
+  align-items: center;
+  justify-self: center;
+}
+
 .botao {
   text-align: center;
   color: #fff;

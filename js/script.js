@@ -42,4 +42,10 @@ const countdownInterval = setInterval(function () {
 // -------------------------------contagem-----------------------------------
 // --------------------------------------------------------------------------
 
-
+function playVideo2() {
+  const iframe = document.getElementById('video2');
+  const videoUrl = "https://www.youtube.com/embed/y15JDMAGYqo?autoplay=1";
+  iframe.src = videoUrl;
+  iframe.style.display = 'block'; 
+  document.querySelector('.video-thumbnail2').style.display = 'none'; 
+}
