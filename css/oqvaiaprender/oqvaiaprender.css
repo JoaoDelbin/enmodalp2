@@ -4,7 +4,6 @@
 
 .oqvaiaprender-bg h2 {
   font-weight: 400;
-  
   justify-self: center;
 }
 
@@ -13,6 +12,10 @@
   padding-bottom: 30px;
   max-width: 700px;
   text-align: center;
+}
+
+.oqvaiaprender-bg h2 {
+  align-items: center;
 }
 
 .grid-lista {
