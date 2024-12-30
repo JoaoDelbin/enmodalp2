@@ -62,6 +62,11 @@
   background-color: #ee1d55;
 }
 
+.container-vermais {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
 
 
 @media (max-width: 800px) {
