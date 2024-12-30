@@ -1,7 +1,7 @@
 .perguntas-frequentes-bg {
   background-color: #000;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 .perguntas-texto {
   text-align: center;
@@ -36,8 +36,8 @@ label.faq-question {
 .faq-answer {
   color: #fff;
   display: none;
-  padding: 20px;
-  background-color: #111;
+  padding: 10px 20px;
+  background-color: #000;
   }
 
   .faq-question::before {
@@ -60,7 +60,6 @@ label.faq-question {
 
 .faq-question:hover,
 .faq-question:active {
-  background-color: #000;
   border-radius: 10px;
 }
 
@@ -79,19 +78,11 @@ div .faq-item input {
   background-color: #000;
 }
 
-@media (max-width:800px) {
-  .faq-question:hover,
-.faq-question:active {
-  background-color: #00000000;
-  border-radius: 10px;
-}
-}
-
 @media (max-width:500px) {
+  .faq-answer {
+    max-width: 300px;
+  }
   .faq-question::before {
    margin-right: 5px;
-  }
-  .faq-answer {
-    text-align: left;
   }
 }
