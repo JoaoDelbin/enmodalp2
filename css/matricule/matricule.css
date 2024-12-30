@@ -1,0 +1,47 @@
+.matricule-bg {
+  background-color: #111;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  box-shadow: inset 0 -90px 0 #000;
+}
+
+.container-matricule article {
+  text-align: center;
+  font-weight: 400;
+}
+
+.container-matricule div a {
+    max-width: 600px; /* Ajuste o tamanho conforme necessário */
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  .container-matricule div .botao-dec::before {
+    margin: 14% 89%;
+  } 
+
+
+
+  
+
+  @media (max-width: 500px) {
+    .matricule-bg {
+      padding-bottom: 10px;
+      box-shadow: inset 0 -45px 0 #000;
+    }
+    .container-matricule article {
+      font-size: 1.8rem;
+    }
+    .container-matricule div a {
+      max-width: 300px; /* Ajuste o tamanho conforme necessário */
+      white-space: normal;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+    .container-matricule div .botao-dec::before {
+      margin: 15% 88%;
+    } 
+    .container-matricule div .botao {
+      font-size: 1.3rem;
+    } 
+  }

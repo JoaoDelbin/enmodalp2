@@ -1,0 +1,63 @@
+.carreira-bg {
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-carreira h3 {
+  text-align: center;
+  font-weight: 400;
+  max-width: 600px;
+  justify-self: center;
+  margin-bottom: 40px;
+}
+.texto-carreira {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400;
+  max-width: 800px;
+  justify-self: center;
+}
+.risco {
+  text-decoration: line-through;
+}
+.depor article.de {
+  font-size: 5rem;
+  font-weight:  600;
+}
+.depor article.por {
+  font-size: 7rem;
+  font-weight:  800;
+}
+
+.depor {
+  text-align: center;
+}
+
+.satisfeito {
+  padding-top: 80px;
+  text-align: center;
+}
+
+@media (max-width:500px) {
+  .satisfeito {
+    padding-top: 40px;
+  }
+  .depor article.de {
+    font-size: 2.7rem;
+   
+  }
+  .depor article.por {
+    font-size: 3rem;
+
+  }
+}
+@media (max-width:360px) {
+  .depor article.de {
+    font-size: 2.5rem;
+   
+  }
+  .depor article.por {
+    font-size: 2.8rem;
+  }
+}
