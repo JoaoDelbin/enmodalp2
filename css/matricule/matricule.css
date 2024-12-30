@@ -11,13 +11,14 @@
 }
 
 .container-matricule div a {
+  line-height: 0.9;
     max-width: 600px; /* Ajuste o tamanho conforme necessário */
     white-space: normal;
     word-wrap: break-word;
     word-break: break-word;
   }
   .container-matricule div .botao-dec::before {
-    margin: 14% 89%;
+    margin: 8% 89%;
   } 
 
 
@@ -33,13 +34,14 @@
       font-size: 1.8rem;
     }
     .container-matricule div a {
-      max-width: 300px; /* Ajuste o tamanho conforme necessário */
+      margin-top: -30px;
+      max-width: 300px;
       white-space: normal;
       word-wrap: break-word;
       word-break: break-word;
     }
     .container-matricule div .botao-dec::before {
-      margin: 15% 88%;
+      margin: 7% 88%;
     } 
     .container-matricule div .botao {
       font-size: 1.3rem;

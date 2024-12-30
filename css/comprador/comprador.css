@@ -6,7 +6,7 @@
   background-size: 600px;
   background-repeat: no-repeat;
   background-position-x: 80%;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 
@@ -25,25 +25,20 @@
     background-position-x: 100%;
   }
   
-
 }
 
 @media (max-width:820px) {
   .comprador-bg {
-    padding-top: 0px;
-    background-image: none;
+      padding-bottom: 250px;
+      background-position-x: 50%;
+      background-position-y: 100%;
+      background-size: 280px;
+    }
   }
 
   .texto-comprador {
     margin-top: 0px;
     margin-bottom: 40px;
-  }
-
-  .imagem-comprador img {
-    display: inline;
-    width: 40%;
-    margin-left: 65%;
-    margin-top: -20%;
   }
 }
 
@@ -51,11 +46,5 @@
   .texto-comprador {
     max-width: 310px;
     padding-top: 40px;
-  }
-  .imagem-comprador img {
-    display: inline;
-    width: 50%;
-    margin-left: 45%;
-    margin-top: -12%;
   }
 }

@@ -65,7 +65,9 @@
 
 
 @media (max-width: 800px) {
-  
+  .texto-professor {
+   text-align: center;
+  }
   .texto-escondido {
     display: none;
   }
