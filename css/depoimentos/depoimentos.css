@@ -18,6 +18,7 @@
 }
 
 .carrossel {
+  justify-content: center;
   display: flex;
   gap: 40px;
   padding: 0 20px;
@@ -114,7 +115,9 @@
   overflow-y: hidden;
 }}
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 608px) {
 
   .container-seta {
     margin-top: -30px;
@@ -136,6 +139,7 @@
     height: 35px;
   }
   .carrossel {
+    justify-content: flex-start;
     gap: 20px;
   }
   .depoimentos-bg {
